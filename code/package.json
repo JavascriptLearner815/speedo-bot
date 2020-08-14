@@ -1,0 +1,28 @@
+{
+  "name": "speedo-bot",
+  "version": "1.0.0",
+  "description": "An awesome written by SpeedoThreeSixty#3179!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavascriptLearner815/speedo-bot.git"
+  },
+  "keywords": [
+    "[\"speedo\"",
+    "\"discord\"",
+    "\"bot\"]"
+  ],
+  "author": "Dean Summer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JavascriptLearner815/speedo-bot/issues"
+  },
+  "homepage": "https://github.com/JavascriptLearner815/speedo-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "pm2": "^4.4.0"
+  }
+}
