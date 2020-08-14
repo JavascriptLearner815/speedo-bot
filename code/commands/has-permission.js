@@ -50,7 +50,7 @@ module.exports = {
             'MANAGE_WEBHOOKS',
             'MANAGE_EMOJIS'
         ];
-        const member = message.mentions.mentions.first();
+        const member = message.mentions.members.first();
         const permission = args[1];
 
         for (const permissionFlag of permissionFlags) {
