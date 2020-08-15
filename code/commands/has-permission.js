@@ -59,7 +59,7 @@ module.exports = {
                     message.reply(`${member} does have ${permission}.`);
                     break;
                 } else {
-                    message.reply(`${member} does have ${permission}.`);
+                    message.reply(`${member} does not have ${permission}.`);
                     break;
                 }
             }
