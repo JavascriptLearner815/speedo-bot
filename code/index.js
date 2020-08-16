@@ -12,6 +12,8 @@ client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
+globalThis.mutedRole = null;
+
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
 
@@ -106,7 +108,11 @@ client.on('typingStart', (channel, user) => {
 });
 
 process.on('unhandledRejection', error => {
-    console.error('Unhandled promise rejection:', error);
+    if (error === 'DiscordAPIError: Cannot send messages to this user') {
+        console.warn('Unhandled promise rejection (warn):', error);
+    } else {
+        console.error('Unhandled promise rejection:', error);
+    }
 });
 
 client.login(token);
