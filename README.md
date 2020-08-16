@@ -13,3 +13,5 @@ To get a list of all **Speedo Bot** commands, type `speedo help` in your dedicat
 to DM you in order to get the help message.
 
 To get information about a specific command, you need to use `speedo help <command>`, and you will be DMed the information about that command.
+## How do I get notified whenever the bot goes online?
+You can check <https://github.com/JavascriptLearner815/speedo-bot/wiki/Is-Speedo-Bot-online%3F> to see if the bot's online.
