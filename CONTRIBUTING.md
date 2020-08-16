@@ -4,4 +4,4 @@ It will only take a few minutes, and will help guide you to good contributions t
 <h2>Pledge</h2>
 This software is free. By "free", we mean no cost for any feature, freedom, and ability to use the program easily. We don't want contributors to create a sexual environment,
 bully or otherwise harass other contributors based on personal qualities, or anything else that could affect other contributors. It could possibly come to the point that 
-contributors would *leave* because of bad behavior in the project. To prevent this, we actively look at the project, work on it, moderate it, and hire more moderators.
+contributors would _leave_ because of bad behavior in the project. To prevent this, we actively look at the project, work on it, moderate it, and hire more moderators.
