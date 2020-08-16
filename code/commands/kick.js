@@ -1,4 +1,4 @@
-const { permissionFlags } = require('../config.json');
+const { permissionFlags, speedoID } = require('../config.json');
 
 module.exports = {
     name: 'kick',
@@ -17,6 +17,10 @@ module.exports = {
 
         if (user.id === message.guild.ownerID) {
             return message.channel.send('You cannot kick the owner of the guild.');
+        }
+        
+        if (user.id === speedoID) {
+            return message.channel.send('How dare you kick my creator');
         }
 
         if (user.bot) {
