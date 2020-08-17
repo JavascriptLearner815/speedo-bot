@@ -13,3 +13,7 @@ To get a list of all **Speedo Bot** commands, type `speedo help` in your dedicat
 to DM you in order to get the help message.
 
 To get information about a specific command, you need to use `speedo help <command>`, and you will be DMed the information about that command.
+## Support Server
+**Speedo Bot** has its own special Discord support server. The invite link to it will never expire, it is <https://discord.gg/N65xUHp>. 
+## Community Forum
+**Speedo Bot** has a new Community Forum to collaborate, discuss, and have fun in! Go sign up here: <https://speedobot.disciplemedia.com/signup>
