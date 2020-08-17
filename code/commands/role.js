@@ -8,7 +8,7 @@ module.exports = {
     usage: '<user> <role> <reason>',
     guildOnly: true,
     cooldown: 20,
-    aliases: ['give', 'give-role'],
+    aliases: ['give', 'give-role', 'add-role'],
     execute(message, args) {
         const author = message.guild.member(message.author);
         const member = message.mentions.members.first() || args[0];
