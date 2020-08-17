@@ -17,3 +17,4 @@ To get information about a specific command, you need to use `speedo help <comma
 **Speedo Bot** has its own special Discord support server. The invite link to it will never expire, it is <https://discord.gg/N65xUHp>. 
 ## Community Forum
 **Speedo Bot** has a new Community Forum to collaborate, discuss, and have fun in! Go sign up here: <https://speedobot.disciplemedia.com/signup>
+Friend me!
