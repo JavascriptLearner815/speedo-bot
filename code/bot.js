@@ -97,36 +97,8 @@ client.on('shardError', error => {
     console.error('A websocket connection encountered an error:', error);
 });
 
-client.on('shardReady', () => {
-    console.log('The websocket is ready.');
-});
-
-client.on('shardDisconnect', () => {
-    console.log('The websocket has disconnected.');
-});
-
-client.on('shardReconnecting', () => {
-    console.log('The websocket is reconnecting...');
-});
-
-client.on('shardResume', () => {
-    console.log('The websocket is resuming.');
-});
-
-client.on('guildUnavailable', (guild) => {
-    console.warn(`The guild ${guild} is unavailable.`);
-});
-
-client.on('typingStart', (channel, user) => {
-    console.log(`${user} is typing in ${channel}...`);
-});
-
 process.on('unhandledRejection', error => {
-    if (error === 'DiscordAPIError: Cannot send messages to this user') {
-        console.warn('Unhandled promise rejection (warn):', error);
-    } else {
-        console.error('Unhandled promise rejection:', error);
-    }
+    console.error('Unhandled promise rejection:', error);
 });
 
 client.login(token);
