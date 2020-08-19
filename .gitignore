@@ -2,6 +2,8 @@
 .env
 .json
 # Slightly dangerous files
+
+# Unwanted files for pushing
 /node_modules
 .dat
 .dll
