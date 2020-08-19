@@ -28,3 +28,4 @@ C:\inetpub\wwwroot\Web.config
 # Slightly dangerous files
 /node_modules
 .dat
+.dll
