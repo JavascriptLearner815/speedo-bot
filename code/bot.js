@@ -84,6 +84,14 @@ client.on('message', message => {
         timestamps.set(message.author.id, now);
         setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
     }
+    
+    if (command === 'stats') {
+        return client.shard.fetchClientValues('guilds.cache.size')
+	        .then(results => {
+		        console.log(`${results.reduce((acc, guildCount) => acc + guildCount, 0)} total guilds`);
+	        })
+	        .catch(console.error);
+    }
 
     try {
         command.execute(message, args);
