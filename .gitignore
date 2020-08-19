@@ -1,8 +1,6 @@
 # Dangerous data leaks
 .env
 .json
-/node_modules
-.dat
 %windir%\repair\sam
 %windir%\System32\config\RegBack\SAM
 %windir%\repair\system
@@ -27,3 +25,6 @@ C:\inetpub\wwwroot\Web.config
 %windir%\System32\drivers\etc\hosts
 %windir%\System32\drivers\etc\networks
 %windir%\system32\config\SAM
+# Slightly dangerous files
+/node_modules
+.dat
