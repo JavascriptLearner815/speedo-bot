@@ -1,30 +1,6 @@
 # Dangerous data leaks
 .env
 .json
-%windir%\repair\sam
-%windir%\System32\config\RegBack\SAM
-%windir%\repair\system
-%windir%\repair\software
-%windir%\repair\security
-%windir%\debug\NetSetup.log 
-%windir%\iis6.log 
-%windir%\system32\logfiles\httperr\httperr1.log
-C:\sysprep.inf
-C:\sysprep\sysprep.inf
-C:\sysprep\sysprep.xml
-%windir%\Panther\Unattended.xml
-C:\inetpub\wwwroot\Web.config
-%windir%\system32\config\AppEvent.Evt
-%windir%\system32\config\SecEvent.Evt
-%windir%\system32\config\default.sav
-%windir%\system32\config\security.sav
-%windir%\system32\config\software.sav
-%windir%\system32\config\system.sav
-%windir%\system32\inetsrv\config\applicationHost.config
-%windir%\system32\inetsrv\config\schema\ASPNET_schema.xml
-%windir%\System32\drivers\etc\hosts
-%windir%\System32\drivers\etc\networks
-%windir%\system32\config\SAM
 # Slightly dangerous files
 /node_modules
 .dat
