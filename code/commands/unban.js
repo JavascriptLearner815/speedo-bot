@@ -8,13 +8,13 @@ module.exports = {
     guildOnly: true,
     cooldown: 5,
     aliases: ['unperm'],
-    execute(message, args) {
+    async execute(message, args) {
         try {
             const guild = message.guild;
             const userID = args[0];
             const reason = args.slice(1).join(' ');
             const author = guild.member(message.author);
-            const bans = guild.fetchBans();
+            const bans = await guild.fetchBans();
     
             if (!author.hasPermission('BAN_MEMBERS')) {
                 return message.channel.send(`${author.user}, you don't have permission to use this command.`);
@@ -28,7 +28,7 @@ module.exports = {
                 return message.channel.send('Please specify a reason.');
             }
     
-            const userBanned = bans.find(user => user.id === reason);
+            const userBanned = bans.find(user => user.id === userID);
     
             if (!userBanned) {
                 return message.channel.send('User does not exist or is not banned.');
