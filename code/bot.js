@@ -27,6 +27,14 @@ client.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
+    
+    if (commandName === 'stats') {
+        return client.shard.fetchClientValues('guilds.cache.size')
+	        .then(results => {
+		        console.log(`${results.reduce((acc, guildCount) => acc + guildCount, 0)} total guilds`);
+	        })
+	        .catch(console.error);
+    }
 
     const command = client.commands.get(commandName)
         || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
