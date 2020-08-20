@@ -31,7 +31,9 @@ client.on('message', message => {
     if (commandName === 'stats') {
         return client.shard.fetchClientValues('guilds.cache.size')
 	        .then(results => {
-		        console.log(`${results.reduce((acc, guildCount) => acc + guildCount, 0)} total guilds`);
+		        const reply = `${results.reduce((acc, guildCount) => acc + guildCount, 0)} total guilds`;
+                
+                        message.channel.send(reply);
 	        })
 	        .catch(console.error);
     }
