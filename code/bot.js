@@ -12,18 +12,6 @@ client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
-function supportReply(msg) {
-    if (msg.guild.id == '744604057678774392') {
-        if (msg.content.includes('mute command')) {
-            return msg.channel.send('The mute command was removed because it had a very big bug. It would create a role, only call it "new role", and not give it, or call it "Muted", and not give it.');
-        } else if (msg.content.includes('level') || msg.content.includes('xp')) {
-            return msg.channel.send('We will add a leveling feature sometime soon.');
-        } else if (msg.content.includes('git')) {
-            return msg.channel.send('https://github.com/JavascriptLearner815/speedo-bot');
-        }
-    }
-}
-
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
 
@@ -35,11 +23,7 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.author.bot) return;
-
-    supportReply(message);
-
-    if (!message.content.startsWith(prefix)) return;
+    if (message.author.bot || !message.content.startsWith(prefix)) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
